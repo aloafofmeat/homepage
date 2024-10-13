@@ -1,10 +1,35 @@
-/* Default styles for larger screens */
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4; /*Light color for now, subject to change with photo or else*/
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #0056b3; /* Accent color for links */
+}
+
+a:hover {
+  color: #003580; /* Darker shade on hover */
+}
+
+/* Default styles for larger screens */
 .container {
   display: flex;
   flex-direction: row;
@@ -18,16 +43,124 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+  .welcome {
+    padding: 60px 10px;
+  }
+
+  .welcome h1 {
+    font-size: 2rem;
+  }
+
+  .welcome nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
 }
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+/* Welcome Section */
+.welcome {
+  background-color: #0056b3; /* Accent color for the welcome section */
+  color: white; /* Contrast color for text */
+  text-align: center;
+  padding: 100px 20px; /* Spacing to give it a "hero" feel */
 }
 
-h1 {
-  font-size: 24px;
+.welcome h1 {
+  font-size: 3rem; /* Larger heading */
+  margin-bottom: 10px;
 }
 
-h1 {
-  font-size: 12px;
+.welcome nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.welcome nav ul li a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: white;
+  color: #0056b3;
+  border-radius: 5px;
+}
+
+.welcome nav ul li a:hover {
+  background-color: #003580; /* Darker background on hover */
+  color: white;
+}
+
+/* Main Sections */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #0056b3; /* Accent color for headings */
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #666;
+}
+
+section nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section nav ul li {
+  font-size: 1.1rem;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #003580; /* Darker accent color */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ffdd57; /* Slightly different accent for links in footer */
+}
+
+.footer a:hover {
+  color: #ffd700; /* Lighter accent on hover */
 }

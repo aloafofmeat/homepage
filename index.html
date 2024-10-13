@@ -1,20 +1,83 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
+  <head>
+    <meta unicode="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nixon Homepage</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <meta unicode="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nixon Homepage</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<section>
-  <!--First Section-->
-  <body>
-    <h1>Hello World!</h1>
-    <h2>This is my 1st day of learning how to code in <em>HTML</em></h2>
-    <p>This website shows all of my projects and progress in the tech space:</p>
+  <!-- Welcome and useful links-->
+  <body class="welcome">
+    <header>
+      <h1>Welcome to Nixon's portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">My Projects</a></li>
+          <li><a href="#contacts">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
   </body>
-</section>
 
-<footer></footer>
+  <body>
+    <main>
+      <!--About Me-->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am Nixon, a technology consultant specialising in cloud architecture
+          (and more to come!)
+        </p>
+        <p>
+          I am currently studying all kinds of coding techniques to build up my
+          portfolio~
+        </p>
+      </section>
+
+      <!--Projects-->
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+          <h3>Project 1 - Personal Portfolio</h3>
+          <p>Building my own personal portfolio and webpage with HTML/CSS</p>
+          <p>
+            Track my progress
+            <a href="https://github.com/aloafofmeat/homepage" target="_blank"
+              >here</a
+            >!
+          </p>
+        </div>
+      </section>
+
+      <!--Contacts-->
+      <section id="contacts">
+        <h2>Contact Me</h2>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://github.com/aloafofmeat" target="_blank"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a href="www.linkedin.com/in/nixonchow" target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <p>
+                Send me an <a href="mailto: nixon.chow0907@gmail.com">email</a>!
+              </p>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+  </body>
+
+  <footer class="footer">
+    <p>@ 2024.10 v0.01 Nixon Chow.</p>
+  </footer>
+</html>
