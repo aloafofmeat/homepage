@@ -5,7 +5,7 @@ body {
   padding: 0;
   line-height: 1.6;
   color: #333;
-  background-color: #f4f4f4; /*Light color for now, subject to change with photo or else*/
+  background-color: #f9f9f9; /*Light color for now, subject to change with photo or else*/
 }
 
 h1,
@@ -21,12 +21,13 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline; /*For hyperlink style*/
   color: #0056b3; /* Accent color for links */
 }
 
 a:hover {
   color: #003580; /* Darker shade on hover */
+  text-decoration: none;
 }
 
 /* Default styles for larger screens */
@@ -45,84 +46,70 @@ a:hover {
   }
 
   .welcome {
-    padding: 60px 10px;
+    padding: 40px 10px;
   }
 
   .welcome h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
-  .welcome nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  section {
-    padding: 15px;
+  main {
+    padding: 10px;
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .footer {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 
 /* Welcome Section */
 .welcome {
-  background-color: #0056b3; /* Accent color for the welcome section */
-  color: white; /* Contrast color for text */
-  text-align: center;
-  padding: 100px 20px; /* Spacing to give it a "hero" feel */
+  background-color: #f9f9f9; /* Accent color for the welcome section */
+  color: #333;
+  padding: 60px 10px;
 }
 
 .welcome h1 {
-  font-size: 3rem; /* Larger heading */
-  margin-bottom: 10px;
+  font-size: 2rem; /* Larger heading */
+  margin-bottom: 20px;
 }
 
 .welcome nav ul {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .welcome nav ul li a {
   font-size: 1.1rem;
-  font-weight: bold;
-  padding: 10px 20px;
-  background-color: white;
+  font-weight: normal;
+  padding: 0;
   color: #0056b3;
-  border-radius: 5px;
-}
-
-.welcome nav ul li a:hover {
-  background-color: #003580; /* Darker background on hover */
-  color: white;
 }
 
 /* Main Sections */
 main {
   padding: 20px;
+  max-width: 800px; /* Limit width for readability */
+  margin: 0 auto;
 }
 
 section {
   margin-bottom: 40px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 0;
 }
 
 h2 {
-  font-size: 2rem;
-  color: #0056b3; /* Accent color for headings */
+  font-size: 1.5rem;
+  color: #cd5c5c; /* Accent color for headings */
 }
 
 .project h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #333;
 }
 
@@ -132,35 +119,32 @@ h2 {
 }
 
 section nav ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: block;
+  margin-left: 20px;
 }
 
 section nav ul li {
   font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 /* Footer Styling */
 .footer {
-  background-color: #003580; /* Darker accent color */
-  color: white;
-  text-align: center;
+  background-color: #f9f9f9; /* Darker accent color */
+  color: #999;
+  text-align: left;
   padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  font-size: 0.8rem;
 }
 
 .footer p {
   margin: 0;
-  font-size: 0.9rem;
 }
 
 .footer a {
-  color: #ffdd57; /* Slightly different accent for links in footer */
+  color: #0056b3; /* Slightly different accent for links in footer */
 }
 
 .footer a:hover {
-  color: #ffd700; /* Lighter accent on hover */
+  color: #003580; /* Lighter accent on hover */
 }
